@@ -1,114 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Competence practic</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Poppins:wght@400;700&display=swap"
-        rel="stylesheet">
+    <title>Full potential</title>
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <script src="https://kit.fontawesome.com/df613de3b6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="top-header">
-            <div class="top-header__text">Trendy theme for companies, agencies and startups</div>
-            <!-- <a href="" class="top-header__icon"><i class="fas fa-phone-alt"></i></a> -->
-            <a class="top-header__phone" href="tel:+441415523000">+44 141 552 3000</a>
+
+    <header>
+        <div class="container">
+            <div class="top-header">
+                <div class="top-header__descr">
+                    Trendy theme for companies, agencies and startups
+                </div>
+                <div class="top-header__contacts">
+                    <a href="tel:+74999228974" class="top-header__phone">
+                        <i class="fas fa-phone-alt"></i>
+                        +7 (499)922-89-74</a>
+                </div>
+            </div>
         </div>
-    </div>
-    <hr class="divider">
-    <div class="wrapper">
-        <div class="header">
-            <div class="header-navbar">
-                <a class="header__logo" href=""><img src="img/logo.png" alt="logo"></a>
-                <ul class="header__menu">
-                    <li class="header__menu-item"><a class="header__menu-link header__menu-link_active"
-                            href="#">Home</a></li>
-                    <li class="header__menu-item"><a class="header__menu-link" href="#">Pages</a></li>
-                    <li class="header__menu-item"><a class="header__menu-link" href="#">Services</a></li>
-                    <li class="header__menu-item"><a class="header__menu-link" href="#">Portfolio</a></li>
-                    <li class="header__menu-item"><a class="header__menu-link" href="#">Blog</a>
-                        <ul class="header__submenu">
-                            <li class="header__menu-item"> <a class="header__menu-link" href="#">Our team</a></li>
-                            <li class="header__menu-item"> <a class="header__menu-link" href="#">Team member</a></li>
-                            <li class="header__menu-item"> <a class="header__menu-link" href="#">Pricing</a></li>
-                            <li class="header__menu-item"> <a class="header__menu-link" href="#">Testimonials</a></li>
-                            <li class="header__menu-item"> <a class="header__menu-link" href="#">404 page</a></li>
-                        </ul>
-                    </li>
-                    <li class="header__menu-item"><a class="header__menu-link" href="#">Contact</a></li>
+        <!-- ------------------------------------------------------------------------------ -->
+        <div class="divider"></div>
+        <!-- ------------------------------------------------------------------------------ -->
+        <div class="container">
+            <div class="nav">
+                <a class="nav__logo"><img src="icons/Logo.svg" alt="Logo"></a>
+                <ul class="nav__menu">
+                    <li class="nav__menu-item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__menu-item"><a href="#" class="nav__link">Pages</a></li>
+                    <li class="nav__menu-item"><a href="#" class="nav__link">Services</a></li>
+                    <li class="nav__menu-item"><a href="#" class="nav__link">Portfolio</a></li>
+                    <li class="nav__menu-item"><a href="#" class="nav__link">Blog</a></li>
+                    <li class="nav__menu-item"><a href="#" class="nav__link">Contact</a></li>
                 </ul>
-            </div>
-            <div class="header-actions">
-                <button class="btn btn-light">Login</button>
-                <span class="header-actions__text">or</span>
-                <button class="btn btn-light">Create account</button>
-            </div>
-        </div>
-        <div class="stage">
-            <div class="stage__content">
-                <h1 class="stage__title">Realize your full potential</h1>
-                <p class="stage__text">We help our clients make realize their most important business goals.</p>
-                <div class="stage__actions">
-                    <a class="btn btn-dark" href="#">Contact us</a>
-                    <a class="link link-arrow" href="#">Order similar</a>
+                <div class="nav__account">
+                    <button class="button button_log">Login</button>
+                    <p>or</p>
+                    <button class="button button_acc">Create account</button>
                 </div>
             </div>
-            <img class="stage__img" src="img/hero1.png" alt="man">
-            <a class="btn-bottom" href="#features"><i class="fas fa-long-arrow-alt-down"></i></a>
-            <!-- href="#features" нажав на стрелку нас перекинет на features. Там обязательно задать id="features" -->
+
         </div>
-        <div class="features" id="features">
-            <!-- id="features" -->
-            <div class="infoblock">
-                <i class="fas fa-dollar-sign"></i>
-                <h3 class="infoblock__title">Corporate finance</h3>
-                <p class="infoblock__text">Leverage agile frameworks to provide a robust synopsis</p>
-                <a class="link link-arrow infoblock__link" href="#">Read more</a>
-            </div>
-            <div class="infoblock">
-                <i class="fas fa-file-invoice-dollar"></i>
-                <h3 class="infoblock__title">Audit & Evaluation</h3>
-                <p class="infoblock__text">Bring to the table win-win survival strategies to ensure proactive</p>
-                <a class="link link-arrow infoblock__link" href="#">Read more</a>
-            </div>
-            <div class="infoblock">
-                <i class="fas fa-hand-holding-usd"></i>
-                <h3 class="infoblock__title">Market analysis</h3>
-                <p class="infoblock__text">Nibh vel velit auctor aliqunean sollicitudinlorem bibendum auci …</p>
-                <a class="link link-arrow infoblock__link" href="#">Read more</a>
-            </div>
-        </div>
-        <div class="article">
-            <img class="article__img" src="img/hero2.png" alt="woman">
-            <div class="article__content">
-                <h3 class="article__title">Get the ultimate tool and learn how to grow your audience</h3>
-                <p class="article__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                    praesentium voluptatum deleniti atque. Many desktop publishing packages and web.</p>
-                <div class="article__actions">
-                    <a class="btn btn-dark" href="#">Get started</a>
-                    <a class="link link-arrow" href="#">Read more</a>
-                </div>
-            </div>
-        </div>
-        <div class="article article_reverse">
-            <img class="article__img" src="img/hero3.png" alt="man2">
-            <div class="article__content">
-                <h2 class="article__title">We offer a full range of digital marketing services</h2>
-                <p class="article__text">Latin words, combined with a handful of model sentence structures, to generate
-                    Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free.</p>
-                <div class="article__actions">
-                    <a class="btn btn-dark" href="#">View prices</a>
-                    <a class="link link-arrow" href="#">More info</a>
-                </div>
-            </div>
-        </div>
-    </div>
+        </nav>
+
+    </header>
+
+
+
+
+
+
+
+
 </body>
 
 </html>
