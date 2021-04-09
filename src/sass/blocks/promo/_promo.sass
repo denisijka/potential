@@ -12,17 +12,29 @@
 		align-items: center
 		width: 540px
 	&__logo
+		margin-right: 55px
 
 	&__menu
 		display: flex
 		justify-content: flex-start
 		text-align: center
 		list-style-type: none
-		margin-left: 34px
 	&__menu-item
 		margin-right: 30px
+
 	&__link
+		position: relative
+		font-weight: normal
+		font-size: 16px
+		color: #5B5766
 		text-decoration: none
+		transition: all 0.2s
+		padding: 0 0 20px 0
+		+link_hover
+
+	&__menu-item:hover &__submenu
+	  display: block
+
 	&__account
 		display: flex
 		align-items: center
