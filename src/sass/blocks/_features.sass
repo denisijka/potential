@@ -1,10 +1,39 @@
 .features
-	min-height: 230px
+	min-height: 229px
 	padding: 93px 0 120px
 	&__infoblocks
 		display: flex
 		justify-content: space-between
 	&__card
-		Width: 360px
-		Height: 229px
-		border: 1px solid #000
+		padding: 30px 29px 30px 30px
+		width: 360px
+		height: 229px
+		background: #FFFFFF
+		box-shadow: 0px 0px 20px #E1E4ED
+		border-radius: 10px
+		+card_hover
+
+	&__card:hover &__icon
+		display: none
+	&__card:hover &__title
+		color: #FFFFFF
+		margin-top: 0
+	&__card:hover &__descr
+		color: #FFFFFF
+	&__card:hover .link_hide
+		display: block
+	&__icon
+		font-size: 32px
+		color: #6852ED
+	&__title
+		font-family: 'Poppins', sans-serif
+		font-weight: bold
+		font-size: 22px
+		color: #554D89
+		margin-top: 30px
+	&__descr
+		font-weight: normal
+		font-size: 18px
+		line-height: 28px
+		color: #716C80
+		margin-top: 19px
