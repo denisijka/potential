@@ -1,0 +1,33 @@
+.infoCard
+	padding: 30px 29px 30px 30px
+	width: 360px
+	height: 229px
+	background: #FFFFFF
+	box-shadow: 0px 0px 20px #E1E4ED
+	border-radius: 10px
+	transition: 0.3s
+	+card_hover
+	&:hover &_icon
+		display: none
+	&:hover &_title
+		color: #FFFFFF
+		margin-top: 0
+	&:hover &_descr
+		color: #FFFFFF
+	&:hover .link_hide
+		display: block
+	&_icon
+		font-size: 32px
+		color: #6852ED
+	&_title
+		font-family: 'Poppins', sans-serif
+		font-weight: bold
+		font-size: 22px
+		color: #554D89
+		margin-top: 30px
+	&_descr
+		font-weight: normal
+		font-size: 18px
+		line-height: 28px
+		color: #716C80
+		margin-top: 19px
