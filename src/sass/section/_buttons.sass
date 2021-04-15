@@ -1,4 +1,8 @@
 .button
+	display: block
+	display: flex
+	justify-content: center
+	align-items: center
 	border: 1px solid $main-color
 	border-radius: 40px
 	font-size: 14px
@@ -25,9 +29,13 @@
 		margin-right: 30px
 		width: 153px
 		height: 50px
-		background: $second-color
+		background: $button-color
 		font-size: 16px
 		color: #FFFFFF
-
+		&-skills
+			width: 225px
+		&-price
+			width: 189px
+			margin: 0
 	&_top
 		margin-top: 47px

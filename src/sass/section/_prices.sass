@@ -1,0 +1,79 @@
+.prices
+    padding: 140px 0 70px
+    &__wrapper
+
+        display: flex
+        justify-content: space-between
+    &__item
+        position: relative
+        padding: 60px 71px 60px 59px
+        background: $cards-bcg
+        box-shadow: $cards-shadow
+        border-radius: 10px
+        color: $text-color
+    &__item-best::before
+        position: absolute
+        content: 'best choise '
+        width: 86px
+        height: 26px
+        display: flex
+        justify-content: center
+        align-items: center
+        top: 63px
+        right: 54px
+        background: rgba(225, 228, 237, 0.6)
+        border-radius: 13px
+        font-weight: bold
+        font-size: 10px
+        line-height: 15px
+        text-transform: uppercase
+        color: #EF7171
+    &__tarif
+        font-family: 'Poppins', sans-serif
+        font-weight: bold
+        font-size: 20px
+        color: $title-color
+    &__divider
+        width: 40px
+        height: 2px
+        background: #BA43FC
+        border-radius: 2px
+        margin-top: 19px
+    &__sum
+        font-family: 'Poppins', sans-serif
+        font-weight: bold
+        font-size: 50px
+        line-height: 60px
+        color: $title-color
+        margin-top: 9px
+    &__period
+        font-weight: normal
+        font-size: 16px
+        line-height: 21px
+        color: $navbar-color
+        mix-blend-mode: normal
+        opacity: 0.8
+        margin-top: 10px
+    &__features
+        margin-top: 60px
+
+    &__feature-item
+        font-weight: normal
+        font-size: 18px
+        line-height: 27px
+        margin-bottom: 10px
+        &::before
+            content: "\f00c"
+            Font-family: FontAwesome
+            color: $main-color
+            margin-right: 10px
+
+        &:last-child
+            margin-bottom: 60px
+    &__feature-item_minus
+        &::before
+            content: "\f00d"
+            Font-family: FontAwesome
+            color: #EF7171
+            opacity: 0.5
+            margin-right: 16px
