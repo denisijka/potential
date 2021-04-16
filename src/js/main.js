@@ -1,8 +1,6 @@
-// const solInfoblock = document.querySelector('.solution__infoblock'),
-//     infoCard = solInfoblock.querySelector('.infoCard'),
-//     cardTitle = infoCard.querySelector('.infoCard_title');
+'use strict';
+const link = document.querySelector('a');
 
-// cardTitle.forEach(function (item) {
-//     item.remove();
-// });
-
+link.addEventListener('click', (event) => {
+    event.defaultPrevented();
+});
