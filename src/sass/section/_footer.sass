@@ -9,9 +9,16 @@
 		justify-content: space-between
 		color: $title-color
 		z-index: 1
+	&__wrapper > div
+		width: 40%
+
+		&:last-child
+			width: 20%
+			display: flex
+
 	&__contacts
 		display: block
-		// width: 400px
+
 		color: $white-color
 		a
 
@@ -42,9 +49,7 @@
 		font-weight: bold
 		font-size: 22px
 		line-height: 33px
-		// margin-right: 127px
 	&__address
-		width: 78%
 		font-weight: normal
 		font-size: 18px
 		line-height: 27px
@@ -55,20 +60,19 @@
 		line-height: 27px
 		margin-top: 10px
 	&__links
-		width: 434px
+
 		a
 			color: $title-color
 			font-weight: normal
 			font-size: 18px
 			line-height: 27px
-			// margin-right: 67px
+
 	&__links-items
 		display: flex
 		flex-flow: row wrap
 		width: 300px
 		margin-top: 30px
 		justify-content: space-between
-		align-content: space-between
 	&__link-item
 		display: block
 		width: 130px
@@ -107,3 +111,16 @@
 		color: $text-color
 		outline: none
 	&__form-btn
+		border: none
+		outline: none
+		background: transparent
+		font-size: 16px
+		color: $main-color
+		margin-right: 21px
+	&__descr
+		font-weight: normal
+		font-size: 18px
+		line-height: 27px
+		color: $text-color
+		opacity: 0.8
+		margin-top: 30px
