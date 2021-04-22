@@ -1,7 +1,9 @@
 .infoCard
+	min-height: 229px
 	padding: 30px 29px 30px 30px
-	width: 360px
-	height: 229px
+	display: flex
+	flex-direction: column
+	flex-basis: 360px
 	background: $cards-bcg
 	box-shadow: $cards-shadow
 	border-radius: 10px
@@ -10,9 +12,11 @@
 	&:hover &_icon
 		display: none
 	&:hover &_title
+
 		color: #FFFFFF
 		margin-top: 0
 	&:hover &_descr
+		flex-grow: 1
 		color: #FFFFFF
 	&:hover .link_hide
 		display: block

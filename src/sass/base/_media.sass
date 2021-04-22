@@ -30,8 +30,8 @@
 		padding: 70px 0 100px
 		&__infoblocks
 			.infoCard
-				width: 300px
-				height: 215px
+				flex-basis: 300px
+				// height: 215px
 				&_icon
 					font-size: 27px
 				&_title
@@ -286,13 +286,17 @@
 		&__infoblocks
 			.infoCard
 				padding: 25px 22px 23px 20px
-				height: 228px
-				width: 229px
+				flex-basis: 230px
+				// height: 228px
+				// width: 229px
 			.infoCard_icon
 				font-size: 23px
 			.infoCard_title
 				margin-top: 16px
 				font-size: 19px
+			.infoCard_descr
+				margin-bottom: 20px
+				flex-grow: 1
 	.audience
 		min-height: 578px
 		padding: 20px 0 85px
@@ -312,3 +316,18 @@
 			height: 37px
 			margin-right: 15px
 			font-size: 13px
+	.playVideo
+		height: 250px
+		&__wrapper
+
+		&__button
+			margin-top: 0
+		&__title
+			margin-top: 0
+		&__descr
+			margin-top: 0
+		.bubble_oval-611px
+			width: 199px
+			height: 510px
+			left: -13.4%
+			top: 66%
