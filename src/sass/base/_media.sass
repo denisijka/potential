@@ -308,11 +308,8 @@
 			margin-top: 83px
 		&__title
 			width: 100%
-			// font-size: 23px
 			line-height: 36px
 		&__text
-			// font-size: 17px
-			// line-height: 26px
 		&__actions
 			margin-top: 32px
 		&__hero
@@ -530,3 +527,64 @@
 		.bubble_20px
 			right: 199px
 			bottom: -143px
+@media (max-width: 767px)
+	// от 576px до 768px
+	.promo
+		&__menu
+			position: fixed
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			top: 0
+			left: -100%
+			width: 500%
+			height: 100vh
+			padding: 20px 15px
+			background-color: rgba(0,0,0,.8)
+			transition: 0.6s all
+			&_active
+				left: 0
+			&_item
+				padding-right: 0
+				border: none
+				margin: 10px 0
+			&_link
+				font-size: 20px
+
+	.hamburger
+		display: block
+		position: absolute
+		right: -124px
+		top: 28px
+		transform: translateY(-50%)
+		width: 45px
+		height: 24px
+		/** это сделано для того что бы когда пользователь конкретно нажимал на гамбургер, у него все правильно срабатывало, без высоты это работает совсем не корректно, 24 пикселей потому что высота 3-ех палочек по 3 пикселя и 3 раза margin-bottom: по 5px **/
+		span
+			display: block
+			/** так как он блочный, ему не надо задавать ширину, он ее возьмет от родителя, блочные элементы очень жадные, они занимают все пространство кот.им уготовано **/
+			height: 3px
+			width: 100%
+			/** на всякий случай **/
+			background-color: #333
+			margin-bottom: 5px
+			transition: all 0.6s
+		&_active
+			span
+				margin-bottom: -2px
+				&:nth-last-child(1)
+					transform: translateY(3px) rotate(-45deg)
+					/** translateY(3px) то есть мы смещаем наши палочки кот.превращаются в крестик на 3 пикселя **/
+				&:nth-last-child(2)
+					display: none
+				&:nth-last-child(3)
+					transform: translateY(3px) rotate(45deg)
+				// что бы это все происходило плавно, можно добавить такое свойство как transition:, добавлять его нужно к самим span, так как они будут трансформироваться
+	.hamburger
+		width: 40px
+		&_active
+			span
+				&:nth-child(1)
+					transform: translateY(5px) rotate(-45deg)
+				&:nth-child(3)
+					transform: translateY(5px) rotate(45deg)
