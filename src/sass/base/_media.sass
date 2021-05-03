@@ -3,6 +3,9 @@
 	/* от 992px до 1200px */
 	.container
 		max-width: 940px
+	.header
+		&__menu
+			margin-right: 150px
 	.realize
 
 		&__title
@@ -226,7 +229,7 @@
 	.container
 		max-width: 720px
 	.header
-		.top-header
+		.top-promo
 			&__descr
 				font-size: 15px
 			&__contacts
@@ -234,20 +237,23 @@
 					font-size: 15px
 	.divider
 		margin-top: 14px
-	.promo
+	.header
 		&__wrapper
+		&__navbar
 			margin-top: 20px
-		&__nav
-			width: 460px
+
 		&__logo
 			margin-right: 30px
 		img
 			width: 32px
+		&__menu
+			margin-right: 35px
 		&__menu-item
 			margin-right: 22px
 		&__link
 			font-size: 15px
 		&__account
+			// margin-left: 46px
 			p
 				font-size: 15px
 		.button_log
@@ -531,19 +537,32 @@
 	// от 576px до 768px
 	.container
 		max-width: 520px
-	.promo
+
+	.header_hidden
+		display: none
+
+	.Hambar
+		display: block
+		position: fixed
+		width: 100%
+		height: 50px
+		// background: #f9f5fe
+		background: transparent
+		z-index: 5
 		&__menu
 			position: fixed
+			display: flex
 			flex-direction: column
 			justify-content: center
 			align-items: center
 			top: 0
 			left: -100%
 			width: 50%
-			height: 100vh
+			height: 100%
 			padding: 20px 15px
-			background-color: rgba(0,0,0,.8)
+			background-color: #3d3c3ccc
 			transition: 0.6s all
+			z-index: 10
 			&_active
 				left: 0
 			&_item
@@ -552,41 +571,35 @@
 				margin: 10px 0
 			&_link
 				font-size: 20px
+		&__menu-item
+			margin-bottom: 20px
+			&:last-child
+				margin-bottom: 0
+		&__link
+			font-size: 25px
+			color: #fff
 
-	.hamburger
-		display: block
-		position: absolute
-		right: 10px
-		top: 5%
-		transform: translateY(-50%)
-		width: 45px
-		height: 24px
-		/** это сделано для того что бы когда пользователь конкретно нажимал на гамбургер, у него все правильно срабатывало, без высоты это работает совсем не корректно, 24 пикселей потому что высота 3-ех палочек по 3 пикселя и 3 раза margin-bottom: по 5px **/
-		span
+		.hamburger
 			display: block
-			/** так как он блочный, ему не надо задавать ширину, он ее возьмет от родителя, блочные элементы очень жадные, они занимают все пространство кот.им уготовано **/
-			height: 3px
-			width: 100%
-			/** на всякий случай **/
-			background-color: #333
-			margin-bottom: 5px
-			transition: all 0.6s
-		&_active
+			position: absolute
+			right: 17px
+			top: 60%
+			transform: translateY(-50%)
+			width: 45px
+			height: 12px
 			span
-				margin-bottom: -2px
-				&:nth-last-child(1)
-					transform: translateY(3px) rotate(-45deg)
-					/** translateY(3px) то есть мы смещаем наши палочки кот.превращаются в крестик на 3 пикселя **/
-				&:nth-last-child(2)
-					display: none
-				&:nth-last-child(3)
-					transform: translateY(3px) rotate(45deg)
-				// что бы это все происходило плавно, можно добавить такое свойство как transition:, добавлять его нужно к самим span, так как они будут трансформироваться
-	.hamburger
-		width: 40px
-		&_active
-			span
-				&:nth-child(1)
-					transform: translateY(5px) rotate(-45deg)
-				&:nth-child(3)
-					transform: translateY(5px) rotate(45deg)
+				display: block
+				height: 3px
+				width: 100%
+				background-color: #c01616
+				margin-bottom: 6px
+				transition: 0.5s all
+			&_active
+				span
+					margin-bottom: -3px
+					&:nth-child(1)
+						transform: translateY(3px) rotate(-45deg)
+					&:nth-child(2)
+						display: none
+					&:nth-child(3)
+						transform: translateY(3px) rotate(45deg)
