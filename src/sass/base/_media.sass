@@ -636,7 +636,7 @@
 			align-items: center
 		.infoCard
 			margin-top: 30px
-			width: 80%
+			width: 75%
 			&:first-child
 
 				margin-top: 0
@@ -689,7 +689,7 @@
 			bottom: -80px
 			right: -183px
 	.marketing
-
+		padding: 55px 0 75px
 		&__wrapper
 			flex-direction: column
 			align-items: center
@@ -706,3 +706,14 @@
 			justify-content: space-evenly
 		&__actions_hidden
 			display: none
+	.solution
+		&__wrapper
+
+		&__infoblocks
+			width: 100%
+		.infoCard:nth-child(1n)
+			flex-basis: 48%
+		&__infoblocks
+			width: 100%
+			.hidden
+				flex-basis: 80%
