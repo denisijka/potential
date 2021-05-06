@@ -134,6 +134,7 @@
 		font-size: 16px
 		color: $main-color
 		margin-right: 21px
+		cursor: pointer
 	&__descr
 		font-weight: normal
 		font-size: 18px
@@ -154,3 +155,20 @@
 	.bubble_60px
 		right: 286px
 		bottom: 91px
+
+		// javascript------------------
+	.promo__interactive-item
+		position: relative
+		color: #000000
+		&:hover
+			.delete
+				content: ''
+				display: block
+				position: absolute
+				right: 0px
+				top: 50%
+				transform: translateY(-50%)
+				width: 20px
+				height: 20px
+				background: url('../icons/trash.png') center (center / cover) no-repeat
+				cursor: pointer

@@ -17,22 +17,84 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     // -------------------------------------------------------------
-    //     const navbar = document.querySelector('.header__navbar'),
-    //         menuList = navbar.querySelectorAll('.header__menu'),
-    //         logo = navbar.querySelector('.header__logo'),
-    //         form = document.querySelector('.footer__subscribe-form'),
-    //         input = form.querySelector('.footer__text-field'),
-    //         btn = form.querySelector('.footer__form-btn');
+    // const navbar = document.querySelector('.header__navbar'),
+    //     menuList = document.querySelector('.promo__interactive-list'),
+    //     logo = navbar.querySelector('.header__logo'),
+    //     form = document.querySelector('.footer__subscribe-form'),
+    //     input = form.querySelector('.footer__text-field'),
+    //     btn = form.querySelector('.footer__form-btn');
 
-    //     console.log(form);
-    //     console.log(btn);
+    // const wishDB = {
+    //     wishes: [
+    //         "Я`Скотт Пилигрим против...",
+    //         "Логан",
+    //         "Гарри поттер",
+    //         "Lord of the rings",
+    //         "Лига справедливости",
+    //         "Матрица",
+    //         "Patriot"
+    //     ]
+    // };
+
+
+    // form.addEventListener('submit', (event) => {
+    //     event.preventDefault();
+
+    //     let newWish = input.value;
+
+    //     if (newWish) {
+    //         if (newWish.length > 21) {
+    //             newWish = `${newWish.substring(0, 22)}...`;
+    //         }
+    //         wishDB.wishes.push(newWish);
+    //         sortArray(wishDB.wishes);
+    //         creatWishList(wishDB.wishes, menuList);
+    //     }
+    //     event.target.reset();
+    // });
 
 
 
+    // const sortArray = (array) => {
+    //     array.sort();
+    // };
 
-    //     btn.addEventListener('click', (event) => {
-    //         event.preventDefault();
+    // function creatWishList(wish, parent) {
+    //     parent.innerHTML = '';
 
+    //     sortArray(wish);
+
+    //     wish.forEach((wish, i) => {
+    //         parent.innerHTML += `
+    //         <li class="promo__interactive-item">${i + 1}. ${wish}
+    //         <div class="delete"></div>
+    //         </li>
+    //         `;
     //     });
+
+    //     document.querySelectorAll('.delete').forEach((btn, i) => {
+    //         btn.addEventListener('click', () => {
+    //             btn.parentElement.remove();
+    //             wishDB.wishes.splice(i, 1);
+    //             creatWishList(wish, parent);
+    //         });
+    //     });
+    // }
+
+
+
+    // creatWishList(wishDB.wishes, menuList);
+
+
+    const links = document.querySelector('.link');
+
+    // links.forEach(item => {
+    //     item.preventDefault();
+    // });
+
+    links.addEventListener('click', (e) => {
+        e.preventDefault();
+    });
+
 
 });
