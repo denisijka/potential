@@ -86,15 +86,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // creatWishList(wishDB.wishes, menuList);
 
 
-    const links = document.querySelector('.link');
-
-    // links.forEach(item => {
-    //     item.preventDefault();
-    // });
-
-    links.addEventListener('click', (e) => {
-        e.preventDefault();
-    });
+   
 
 
 });
